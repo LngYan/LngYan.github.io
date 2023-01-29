@@ -1,3 +1,0 @@
-title: about
-type: "about"
----
