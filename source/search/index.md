@@ -1,3 +1,0 @@
-title: search
-type: "search"
----
