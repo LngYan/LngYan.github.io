@@ -1,0 +1,3 @@
+title: search
+type: "search"
+---
