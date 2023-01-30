@@ -14,15 +14,40 @@ autoplay: false
 
 # 默认音乐（随机播放）
 mp3: 
-    - http://link.hhtjim.com/163/425570952.mp3
-    - http://link.hhtjim.com/163/425570952.mp3
+    - http://music.163.com/song/media/outer/url?id=1386604074.mp3
+    - http://music.163.com/song/media/outer/url?id=1983968838.mp3
+    - http://music.163.com/song/media/outer/url?id=1475205240.mp3
+    - http://music.163.com/song/media/outer/url?id=1329665666.mp3
+    - http://music.163.com/song/media/outer/url?id=1329664866.mp3
+    - http://music.163.com/song/media/outer/url?id=1965991637.mp3
+    - http://music.163.com/song/media/outer/url?id=475073089.mp3
+    - http://music.163.com/song/media/outer/url?id=1818613179.mp3
+    - http://music.163.com/song/media/outer/url?id=1832606560.mp3
+    - http://music.163.com/song/media/outer/url?id=1834950169.mp3
+    - http://music.163.com/song/media/outer/url?id=1470255625.mp3
 
 # 首页封面图, 为空时取文章的cover作为封面(注意跨域问题,建议使用同源图片)
 welcome_cover: /img/welcome-cover.jpg
 
 # 默认文章封面图（随机调用,支持外链）
 cover: 
-  - /img/cover.jpg
+  - /img/cover/cover1.png
+  - /img/cover/cover2.png
+  - /img/cover/cover3.png
+  - /img/cover/cover4.png
+  - /img/cover/cover5.png
+  - /img/cover/cover6.png
+  - /img/cover/cover7.png
+  - /img/cover/cover8.png
+  - /img/cover/cover9.png
+  - /img/cover/cover10.png
+  - /img/cover/cover11.png
+  - /img/cover/cover12.jpg
+  - /img/cover/cover13.jpg
+  - /img/cover/cover14.jpg
+  - /img/cover/cover15.jpg
+  - /img/cover/cover16.jpg
+  - /img/cover/cover17.jpg
   - /img/welcome-cover.jpg
 
 # 是否显示Twitter分享卡片图像(图像尺寸要求：1200*600，creatorid不需要带@符号。注意：链接必须是完整url，否则Twitter将无法读取图片信息）
@@ -89,7 +114,7 @@ gitalk:
     distractionFreeMode: false
 
 # 网站关键字
-keywords: Fechin
+keywords: 冷焱
 
 # 要使用google_analytics进行统计的话，这里需要配置ID
 google_analytics: 
