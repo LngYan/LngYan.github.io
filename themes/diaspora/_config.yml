@@ -7,7 +7,7 @@ menu:
   关于: /about
 
 # 是否显示目录
-TOC: ture
+TOC: true
 
 # 是否自动播放音乐
 autoplay: false
@@ -95,19 +95,19 @@ beian:
 # Gitalk 评论插件（https://github.com/gitalk/gitalk）
 gitalk:
     # 是否启用评论功能
-    enable: false
+    enable: true
     # 是否自动展开评论框
-    autoExpand: false
+    autoExpand: true
     # 应用编号
-    clientID: ''
+    clientID: 'c2cb3305e9b43afef8ad'
     # 应用秘钥
-    clientSecret: ''
+    clientSecret: 'c6c5ed4ad679e0a71a9bceb3f7318dd6a384c672'
     # issue仓库名
-    repo: ''
+    repo: 'LngYan.github.io'
     # Github名
-    owner: ''
+    owner: 'LngYan'
     # Github名
-    admin: ['']
+    admin: ['LngYan']
     # Ensure uniqueness and length less than 50
     id: location.pathname
     # Facebook-like distraction free mode
