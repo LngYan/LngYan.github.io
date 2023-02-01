@@ -14,9 +14,8 @@
 <p>最后最后，你要相信自己一定能行！</p>
 ]]></content>
       <categories>
-        <category>编程</category>
-        <category>前端</category>
-        <category>目标</category>
+        <category>blog</category>
+        <category>target</category>
       </categories>
       <tags>
         <tag>初学者</tag>
@@ -134,12 +133,12 @@ jobs:
 <h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="https://hexo.io/themes/">更多主题</a><br><a href="https://hexo.io/plugins/">更多插件</a></p>
 ]]></content>
       <categories>
-        <category>分类1</category>
-        <category>分类2</category>
+        <category>Hexo</category>
+        <category>blog</category>
       </categories>
       <tags>
-        <tag>标签1</tag>
-        <tag>标签2</tag>
+        <tag>博客</tag>
+        <tag>个人网站</tag>
       </tags>
   </entry>
 </search>
