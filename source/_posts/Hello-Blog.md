@@ -1,9 +1,8 @@
 ---
 title: Hello 博客
 categories:
-  - 编程
-  - 前端
-  - 目标
+  - blog
+  - target
 tags:
   - 初学者
   - 静态HTML

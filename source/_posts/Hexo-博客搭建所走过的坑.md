@@ -1,13 +1,11 @@
 ---
 title: Hexo-博客搭建
 categories:
-  - 分类1
-  - 分类2
+  - Hexo
+  - blog
 tags:
-  - 标签1
-  - 标签2
-author: 冷焱
-
+  - 博客
+  - 个人网站
 ---
 ## 前沿
 ### 为何搭建博客
