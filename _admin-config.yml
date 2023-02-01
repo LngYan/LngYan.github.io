@@ -1,4 +1,5 @@
 options:
   lineNumbers: true
+  overwriteImages: true
 editor:
   lineNumbers: true
