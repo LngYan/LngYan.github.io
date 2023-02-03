@@ -19,11 +19,22 @@ https://fluid-dev.github.io/hexo-fluid-docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%
 
 https://zsyyblog.com/about/
 
-``` mermaid
-graph LR
-A[方形] -->B(圆角)
+{% blockquote %}
+ - graph LR
+ - A[方形] -->B(圆角)
     B --> C{条件a}
     C -->|a=1| D[结果1]
     C -->|a=2| E[结果2]
     F[横向流程图]
-```
+{% endblockquote %}
+
+::: danger
+**警告**
+这是一个危险信号
+:::
+
+H~2~O
+
+::: warning
+*here be dragons*
+:::
