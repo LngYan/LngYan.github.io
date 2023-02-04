@@ -13,7 +13,7 @@ timezone: 'UTC+08:00'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://LngYan.github.io
+url: https://blog.ocexa.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -107,8 +107,9 @@ theme: diaspora
 deploy:
   type: git
   repo: https://github.com/LngYan/LngYan.github.io #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
-  branch: [branch]
+  branch: gh-pages
   message: [message]
+  
 #主题搜索
 search:
   path: search.xml
@@ -136,3 +137,4 @@ markdown_it_plus:
     plugins:
         - plugin:
             name: markdown-it-container
+

@@ -1,0 +1,18 @@
+ID		value
+Param29	    	0-1	披风
+CAT		0-1	抱着猫
+FACE1		0-1	震惊
+FACE2		0-1	星星眼
+FACE3		0-1	飞机耳
+FACE4		0-1	哭泣
+FACE5		0-1	生气
+Weiba		0-1	尾巴开关
+
+
+ParamBreath	0-1	
+
+	
+Animation
+idle.motion3
+
+

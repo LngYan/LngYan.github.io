@@ -1,0 +1,29 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "lengyan.moc3",
+		"Textures": [
+			"lengyan.2048/texture_00.png",
+			"lengyan.2048/texture_01.png",
+			"lengyan.2048/texture_02.png",
+			"lengyan.2048/texture_03.png"
+		],
+		"Physics": "lengyan.physics3.json",
+		"DisplayInfo": "lengyan.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		}
+	]
+}
