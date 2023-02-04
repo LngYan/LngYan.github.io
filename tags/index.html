@@ -63,7 +63,7 @@
     </div>
 </div>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
 
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
@@ -128,8 +128,20 @@
             </div>
         </div>
     </div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/oh-my-live2d/dist/oml-cubism4.min.js"></script>
+    <script>const oml = OML2D.loadLive2DModel({
+        sayHello: true,
+        transitionTime: 2000,
+            source: "/",
+            models: {
+                path: 'live2d_models/lengyan/lengyan.model3.json',
+                y: '110',
+                scale:'2',
+                    },
 
+      });
+    </script>
+</div>
 
 
 
