@@ -2,13 +2,13 @@
 <search>
   <entry>
     <title>Hello 博客</title>
-    <url>/2023/02/04/Hello-Blog/</url>
+    <url>/2023/02/06/Hello-Blog/</url>
     <content><![CDATA[<h2 id="hello-博客"><a class="markdownIt-Anchor" href="#hello-博客"></a> Hello 博客</h2>
 <p>我是初来的初学者，请多多指教！</p>
 <p>这是我的第一篇博客。</p>
 <p>记录下我的目标希望在回首看到这篇文章的时候我已经达成了我的目标。</p>
 <h3 id="高级数据分析师"><a class="markdownIt-Anchor" href="#高级数据分析师"></a> 高级数据分析师</h3>
-<p>踏入数据分析的队伍是因为能对未来数据进行预测是一个很有意思的挑战。后来，我直接报了个班，花了半年时间系统学习了数据分析的基础理解了数据采集、数据清洗、数据分析、数据挖掘的方方面面，在对数据分析的深层次的了解后，认识到数据分析是展现价值，数据挖掘是核心内容预测出来的结果是通过相关的算法计算出来所以说在机器学习中算法是核心，数据是计算的基础。所以现阶段对于数据分析的目标是熟悉业务数据分析并且学习数据挖掘等各个计算基础等进一步提高自己的编程能力，在未来可以依靠自己的能力立足。</p>
+<p>踏入数据分析的队伍是因为能对未来数据进行预测是一个很有意思的挑战。后来，我直接报了个班，花了半年时间系统学习了数据分析的基础理解了数据采集、数据清洗、数据分析、数据挖掘的方方面面，在对数据分析的深层次的了解后，认识到数据分析是展现价值，而数据的深层挖掘预测出的结果是通过相关的算法计算并且依靠机器学习不优化学习出来所以说算法及机器学习才是核心，数据是计算的基础。所以现阶段对于数据分析的目标是熟悉业务数据分析并且学习数据挖掘等各个计算基础等进一步提高自己的相关知识能力，在未来可以依靠自己的能力立足。</p>
 <h3 id="做一个十万粉up主"><a class="markdownIt-Anchor" href="#做一个十万粉up主"></a> 做一个十万粉up主</h3>
 <p>B站刚开始建站的时候我就注册了一个账号，一直用到现在，看着B站的起起落落，以前12dore团队不亦乐乎的MC整活在到纯黑、陆夫人、黑桐谷歌的各种游戏解说都是我小时候的乐趣，也是我想做UP主的一个起因，可我依旧没有规划好我该往那个方向（区）发展，感觉我什么都想做但是没都做不好，冷焱的出现就是最好的例子，所以我挺对不起冷焱的，想给他丰富的一生却法将精力全部投入，现在想做的事情和我的精力以及资金完全相反，我会一步一步的将这个目标敲定！</p>
 <p>最后，就是对未来事业的遐想。对于最想进的大厂我还没有具体详细地去了解过，如果可以我希望自己可以成立一个小型企业，邀请一些志同道合地人来尽情地发挥自己的想象动用自己的能力。</p>
@@ -25,44 +25,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo-优化</title>
-    <url>/2023/02/04/Hexo-%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<p>优化谷歌字体<br />
-<a href="https://blog.csdn.net/klsfp/article/details/118228645">https://blog.csdn.net/klsfp/article/details/118228645</a></p>
-<p>优化gitalk评论系统</p>
-<p><a href="https://fluid-dev.github.io/hexo-fluid-docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%9C%BA">https://fluid-dev.github.io/hexo-fluid-docs/guide/#slogan-打字机</a></p>
-<p><a href="https://zsyyblog.com/about/">https://zsyyblog.com/about/</a></p>
-<blockquote><ul>
-<li>graph LR</li>
-<li>A[方形] --&gt;B(圆角)<br />
-B --&gt; C{条件a}<br />
-C --&gt;|a=1| D[结果1]<br />
-C --&gt;|a=2| E[结果2]<br />
-F[横向流程图]</li>
-</ul>
-</blockquote>
-<p>::: danger<br />
-<strong>警告</strong><br />
-这是一个危险信号<br />
-:::</p>
-<p>H<sub>2</sub>O</p>
-<p>::: warning<br />
-<em>here be dragons</em><br />
-:::</p>
-<p>111</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-        <category>bolg</category>
-      </categories>
-      <tags>
-        <tag>优化</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo-博客搭建</title>
-    <url>/2023/02/04/Hexo-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%89%80%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/</url>
+    <title>Hexo 博客搭建</title>
+    <url>/2023/02/06/Hexo%20%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%89%80%E8%B5%B0%E8%BF%87%E7%9A%84%E5%9D%91/</url>
     <content><![CDATA[<h2 id="前沿"><a class="markdownIt-Anchor" href="#前沿"></a> 前沿</h2>
 <h3 id="为何搭建博客"><a class="markdownIt-Anchor" href="#为何搭建博客"></a> 为何搭建博客</h3>
 <p>建立博客的想法是在学习中以为老师推荐的，后来，随着个人知识面的拓展和深入，发现有太多的知识和经验值得沉淀和交流，在某年没有回家过春节的时候沉下心来搭建了一个博客，算是自己有一个回顾复盘的地方了吧。</p>
@@ -182,6 +146,41 @@ jobs:
       <tags>
         <tag>博客</tag>
         <tag>个人网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo-优化</title>
+    <url>/2023/02/06/Hexo-%E4%BC%98%E5%8C%96/</url>
+    <content><![CDATA[<p>优化谷歌字体<br />
+<a href="https://blog.csdn.net/klsfp/article/details/118228645">https://blog.csdn.net/klsfp/article/details/118228645</a></p>
+<p>优化gitalk评论系统</p>
+<p><a href="https://fluid-dev.github.io/hexo-fluid-docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%9C%BA">https://fluid-dev.github.io/hexo-fluid-docs/guide/#slogan-打字机</a></p>
+<p><a href="https://zsyyblog.com/about/">https://zsyyblog.com/about/</a></p>
+<blockquote><ul>
+<li>graph LR</li>
+<li>A[方形] --&gt;B(圆角)<br />
+B --&gt; C{条件a}<br />
+C --&gt;|a=1| D[结果1]<br />
+C --&gt;|a=2| E[结果2]<br />
+F[横向流程图]</li>
+</ul>
+</blockquote>
+<p>::: danger<br />
+<strong>警告</strong><br />
+这是一个危险信号<br />
+:::</p>
+<p>H<sub>2</sub>O</p>
+<p>::: warning<br />
+<em>here be dragons</em><br />
+:::</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+        <category>bolg</category>
+      </categories>
+      <tags>
+        <tag>优化</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
 </search>
