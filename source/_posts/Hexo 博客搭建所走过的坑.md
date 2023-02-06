@@ -1,5 +1,5 @@
 ---
-title: Hexo-博客搭建
+title: Hexo 博客搭建
 categories:
   - Hexo
   - blog

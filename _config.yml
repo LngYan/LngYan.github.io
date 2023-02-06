@@ -137,4 +137,4 @@ markdown_it_plus:
     plugins:
         - plugin:
             name: markdown-it-container
-
+            enable: true
