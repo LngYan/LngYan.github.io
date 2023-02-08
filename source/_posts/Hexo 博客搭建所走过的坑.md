@@ -1,5 +1,7 @@
 ---
 title: Hexo 博客搭建
+date: 2023-01-31 16:10:09
+top: 2
 categories:
   - Hexo
   - blog
@@ -9,7 +11,7 @@ tags:
 ---
 ## 前沿
 ### 为何搭建博客
-建立博客的想法是在学习中以为老师推荐的，后来，随着个人知识面的拓展和深入，发现有太多的知识和经验值得沉淀和交流，在某年没有回家过春节的时候沉下心来搭建了一个博客，算是自己有一个回顾复盘的地方了吧。
+建立博客的想法是在学习中一位老师推荐的，后来，随着个人知识面的拓展和深入，发现有太多的知识和经验值得沉淀和交流，在某年没有回家过春节的时候沉下心来搭建了一个博客，算是自己有一个回顾复盘的地方了吧。
 
 另外，根据“学习金字塔”理论（Edgar Dale，1946），**对知识进行演示、实践和传授能够显著提升学习保持率**，而沉淀为博客或视频正是这样一种形式，我认为一方面可以让无形的知识转为有形的博客，便于之后复习和追溯，另一方面通过沉淀转化可以提高我对知识的记忆和掌握水平。
 
@@ -66,7 +68,7 @@ $ hexo init <folder>
 $ cd <folder>
 ```
 成功运行后，即可使用 hexo 的命令对该目录进行操作了
-HEXO-博客搭建P1.png
+
 ![upload successful](/images/pasted-1.png)
 运行：
 ```
@@ -122,7 +124,7 @@ $ hexo s
 配置 Github 仓库：
 
 需要创建一个仓库(repository) 来存储我们的网站，点击首页任意位置出现的 New repository按钮创建仓库, Respository name 中的`username.github.io `的username 一定与前面的Owner 一致，记住你的`username`下面会用到。
-HEXO-博客搭建P2.png
+
 ![upload successful](/images/pasted-2.png)
 
 将 Hexo 文件夹中的文件 push 到储存库的默认分支，默认分支通常名为 main，旧一点的储存库可能名为 master。
@@ -135,7 +137,7 @@ $ git push -u origin main
 使用 node --version 指令检查你电脑上的 Node.js 版本，并记下该版本 (例如：`v16.y.z`)
 在储存库中建立 `.github/workflows/pages.yml`（特别注意路径我就踩过坑把文件存在了根目录下），并填入以下内容 (将 16 替换为上个步骤中记下的版本)：
 
-```
+``` yml
 .github/workflows/pages.yml
 
 name: Pages
@@ -173,7 +175,7 @@ jobs:
 当部署作业完成后，产生的页面会放在储存库中的 gh-pages 分支。
     在储存库中前往 Settings > Pages > Source，并将 branch 改为 gh-pages。
     
-HEXO-博客搭建P3.png
+
 ![upload successful](/images/pasted-3.png)
 
 过几分钟后，访问上方的网站，就可以看见你博客就搭建成功啦！
