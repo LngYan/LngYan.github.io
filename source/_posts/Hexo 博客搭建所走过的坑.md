@@ -1,5 +1,5 @@
 ---
-title: Hexo 博客搭建
+title: Hexo 搭建入门
 date: 2023-01-31 16:10:09
 top: 2
 categories:

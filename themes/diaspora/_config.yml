@@ -127,7 +127,7 @@ keywords: 冷焱
 google_analytics: 
 
 # 网站ico
-favicon: /img/favicon.png
+favicon: https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/favicon.png
 
 # rss文件
 rss: atom.xml
