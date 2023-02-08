@@ -148,39 +148,4 @@ jobs:
         <tag>个人网站</tag>
       </tags>
   </entry>
-  <entry>
-    <title>Hexo-优化</title>
-    <url>/2023/02/08/Hexo-%E4%BC%98%E5%8C%96/</url>
-    <content><![CDATA[<p>优化谷歌字体<br />
-<a href="https://blog.csdn.net/klsfp/article/details/118228645">https://blog.csdn.net/klsfp/article/details/118228645</a></p>
-<p>优化gitalk评论系统</p>
-<p><a href="https://fluid-dev.github.io/hexo-fluid-docs/guide/#slogan-%E6%89%93%E5%AD%97%E6%9C%BA">https://fluid-dev.github.io/hexo-fluid-docs/guide/#slogan-打字机</a></p>
-<p><a href="https://zsyyblog.com/about/">https://zsyyblog.com/about/</a></p>
-<blockquote><ul>
-<li>graph LR</li>
-<li>A[方形] --&gt;B(圆角)<br />
-B --&gt; C{条件a}<br />
-C --&gt;|a=1| D[结果1]<br />
-C --&gt;|a=2| E[结果2]<br />
-F[横向流程图]</li>
-</ul>
-</blockquote>
-<p>::: danger<br />
-<strong>警告</strong><br />
-这是一个危险信号<br />
-:::</p>
-<p>H<sub>2</sub>O</p>
-<p>::: warning<br />
-<em>here be dragons</em><br />
-:::</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-        <category>bolg</category>
-      </categories>
-      <tags>
-        <tag>优化</tag>
-        <tag>博客</tag>
-      </tags>
-  </entry>
 </search>
