@@ -1,10 +1,11 @@
 # 头部菜单，title: link
 menu:
-  首页: /
   分类: /categories
   标签: /tags
   归档: /archives  
   关于: /about
+  Excel函数表: https://www.ocexa.cn:10003/d/s/734967737417211928/IxagvuBhy9eusNurwcIeusd2ypJ4xiNw-GSBgj1whMwo_
+
 
 # 是否显示目录
 TOC: true
