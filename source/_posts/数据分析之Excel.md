@@ -96,4 +96,4 @@ excel重处理而弱采集，尤其在大体量的公司，跨部门收集、汇
 
 [Excelhome](https://www.excelhome.net/)
 [Excel精英论坛](http://www.excelpx.com/)
-[Excel函数表]（https://www.ocexa.cn:10003/d/s/734967737417211928/IxagvuBhy9eusNurwcIeusd2ypJ4xiNw-GSBgj1whMwo_）
+[Excel函数表](https://www.ocexa.cn:10003/d/s/734967737417211928/IxagvuBhy9eusNurwcIeusd2ypJ4xiNw-GSBgj1whMwo_）
