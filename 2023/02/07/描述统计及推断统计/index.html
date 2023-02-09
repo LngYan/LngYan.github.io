@@ -80,11 +80,11 @@
 <p>案例1：假设一家公司的老板说自己公司平均工资在20000左右，你是不是很心动？但实际上可能老板：60000 张三 6000 李四<br />
 8000 王五 5000 所以你去过可能也就是5000～7000的水平可见这个坑有多深。<br />
 案例二：2019年国家统计局发布的工资数据中提到：信息传输、软件和信息技术服务业平均工资得以快速增⻓，2019年<br />
-平均工资为122478元，比上年增⻓9.3%<br />
-<img src="/images/%E6%8F%8F%E8%BF%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E6%8E%A8%E6%96%AD%E7%BB%9F%E8%AE%A11.jpg" alt="img" /><br />
-这么看是不是发现统计学他时时刻刻都在我们身边？将他啃下，我们也能当一名会做生意的老板。<br />
-大概讲明白了统计学的的例子，我们继续把统计学中两个重要的分支：描述统计和推断统计，在拿出来说说。</p>
+平均工资为122478元，比上年增⻓9.3%</p>
 </blockquote>
+<p><img src="/images/%E6%8F%8F%E8%BF%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E6%8E%A8%E6%96%AD%E7%BB%9F%E8%AE%A11.jpg" alt="img" /></p>
+<p>这么看是不是发现统计学他时时刻刻都在我们身边？将他啃下，我们也能当一名会做生意的老板。<br />
+大概讲明白了统计学的的例子，我们继续把统计学中两个重要的分支：描述统计和推断统计，在拿出来说说。</p>
 <h2 id="描述统计"><a class="markdownIt-Anchor" href="#描述统计"></a> 描述统计</h2>
 <ul>
 <li>将一系列复杂数据，减少为几个能起到描述作用的数字（均值，中位数等），用这些有代表性的数字来代表整个数字集。然后还可以将代表性数据图形化/可视化，可以更直观的了解数据，从而用数据解释问题。</li>
@@ -121,7 +121,7 @@
 </li>
 <li>pandas计算均值：</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.mean(axis=0)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.mean(axis=<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 <h4 id="中位数"><a class="markdownIt-Anchor" href="#中位数"></a> 中位数</h4>
 <p>主要用于顺序型数据。将全体数据从小到大排列，在整个数列中处于中间位置的那个值就是中位数。个数为奇数的中位数，根据位置取中间的那个数即可。个数为偶数的中位数，就是中间两个数值的均值。</p>
 <ul>
@@ -159,7 +159,7 @@
 </li>
 <li>pandas计算众数：</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = Series([1,2,3,3,3,3,3,4,5])</span><br><span class="line">s.mode() #众数</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])</span><br><span class="line">s.mode() <span class="comment">#众数</span></span><br></pre></td></tr></table></figure>
 <h3 id="离散趋势描述"><a class="markdownIt-Anchor" href="#离散趋势描述"></a> 离散趋势描述</h3>
 <h4 id="方差"><a class="markdownIt-Anchor" href="#方差"></a> 方差</h4>
 <ul>
@@ -181,10 +181,10 @@
 方差：反映各数据远离其中心值的趋势<br />
 pandas计算方差：</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = Series([1,2,3,3,3,3,3,4,5])</span><br><span class="line">s.var()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])</span><br><span class="line">s.var()</span><br></pre></td></tr></table></figure>
 <p>标准差<br />
 方差开根号就是标准差</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = Series([1,2,3,3,3,3,3,4,5])</span><br><span class="line">s.std()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">s = Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>])</span><br><span class="line">s.std()</span><br></pre></td></tr></table></figure>
 <p>思考：<br />
 一组数据携带的信息量的大小可以使用方差来衡量方差越大表示这组数据携带的信息量越大，反之越小。</p>
 <ul>
@@ -194,9 +194,9 @@ pandas计算方差：</li>
 <h2 id="推断统计"><a class="markdownIt-Anchor" href="#推断统计"></a> 推断统计</h2>
 <ul>
 <li>是研究如何利用样本数据来推断总体特征的统计方法。推断统计其实是建立在描述统计的基础之上，在对总体数据有了大致的了解之后，运用一些分析方法，对数据进行预测，并达到统计决策的目的，其实不管是在统计学上，还是在实际的业务分析中，我们做分析的终极目的就是用来得出我们结论，应用于决策。</li>
-<li>例如：房价预测，通过预测数据来进行销售，用户看到房价走势，如果一路走高，是不是要提早下手。<br />
-<img src="/images/%E6%8F%8F%E8%BF%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E6%8E%A8%E6%96%AD%E7%BB%9F%E8%AE%A12.jpg" alt="img" /></li>
+<li>例如：房价预测，通过预测数据来进行销售，用户看到房价走势，如果一路走高，是不是要提早下手。</li>
 </ul>
+<p><img src="/images/%E6%8F%8F%E8%BF%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E6%8E%A8%E6%96%AD%E7%BB%9F%E8%AE%A12.jpg" alt="img" /></p>
 <hr />
 <p>看完这个篇文章的内容后是否开始一点点的了解？如果还是没有了解也没关系，我们更多的是要了解如何应用进pandas当中，学习他们在分析中的作用，来帮助我们更好的完成所需要的工作。<br />
 下会我会讲述下统计学中的几个概念，二项分布和正太分布。下会再见~</p>
