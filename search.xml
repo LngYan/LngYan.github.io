@@ -152,8 +152,7 @@
 <blockquote>
 <p>案例1：假设一家公司的老板说自己公司平均工资在20000左右，你是不是很心动？但实际上可能老板：60000 张三 6000 李四<br />
 8000 王五 5000 所以你去过可能也就是5000～7000的水平可见这个坑有多深。<br />
-案例二：2019年国家统计局发布的工资数据中提到：信息传输、软件和信息技术服务业平均工资得以快速增⻓，2019年<br />
-平均工资为122478元，比上年增⻓9.3%</p>
+案例二：2019年国家统计局发布的工资数据中提到：信息传输、软件和信息技术服务业平均工资得以快速增⻓，2019年平均工资为122478元，比上年增⻓9.3%</p>
 </blockquote>
 <p><img src="/images/%E6%8F%8F%E8%BF%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E6%8E%A8%E6%96%AD%E7%BB%9F%E8%AE%A11.jpg" alt="img" /></p>
 <p>这么看是不是发现统计学他时时刻刻都在我们身边？将他啃下，我们也能当一名会做生意的老板。<br />
@@ -221,7 +220,7 @@
 </li>
 <li>pandas计算中位数/四分位数：</li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">df = DataFrame(data=np.random.randint(0,100,size=(3,5)))</span><br><span class="line">df.median(axis=1) #计算df中每一行的中位数，如果行数据不是有序的，</span><br><span class="line">则median会将其变为有序在计算中位数</span><br><span class="line">df.describe() #可以将df的每一列进行统计描述</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df = DataFrame(data=np.random.randint(<span class="number">0</span>,<span class="number">100</span>,size=(<span class="number">3</span>,<span class="number">5</span>)))</span><br><span class="line">df.median(axis=<span class="number">1</span>) <span class="comment">#计算df中每一行的中位数，如果行数据不是有序的，</span></span><br><span class="line">则median会将其变为有序在计算中位数</span><br><span class="line">df.describe() <span class="comment">#可以将df的每一列进行统计描述</span></span><br></pre></td></tr></table></figure>
 <h4 id="众数"><a class="markdownIt-Anchor" href="#众数"></a> 众数</h4>
 <ul>
 <li>众数是指总体中出现次数最多的标志值，简单来说就是一组数据当中，出现次数最多的那个数。在实际工作中，众数有相当广泛的应用。
