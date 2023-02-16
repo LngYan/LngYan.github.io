@@ -129,7 +129,7 @@ $ hexo s
 
 将 Hexo 文件夹中的文件 push 到储存库的默认分支，默认分支通常名为 main，旧一点的储存库可能名为 master。
 - 将 **main** 分支 push 到 GitHub：
-```
+``` 
 $ git push -u origin main
 ```
 - 默认情况下 public/ 不会被上传(也不该被上传)，确保 .gitignore 文件中包含一行 public/。整体文件夹结构应该与 范例储存库 大致相似。
