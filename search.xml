@@ -151,15 +151,15 @@
 <p>图片6</p>
 <h2 id="chatgpt是什么"><a class="markdownIt-Anchor" href="#chatgpt是什么"></a> 【ChatGPT是什么？】</h2>
 <p>首先，ChatGPT 是由OpenAI公司在2022年11月30日发布的一种聊天机器人模型，是由人工智能技术驱动的自然语言处理工具，其中 Chat 就是聊天。当然不是像小爱同学、siri等智能家居系统这样简单的回答以及完型填空，chatGPT更像是回答你出的命题作文一样进行写作。</p>
-<p>然后重点是后面的 ** 【GPT】 <strong>，即 ** Generative Pre-trained Transformer <strong>，中文叫</strong>“生成型预训练变换模型”</strong>。<br />
+<p>然后重点是后面的 <strong>【GPT】</strong> ，即 <strong>Generative Pre-trained Transformer</strong> ，中文叫 <strong>“生成型预训练变换模型”</strong>。<br />
 <img src="/images/chatGPT7.jpg" alt="img" /><br />
 简单来说，ChatGPT就像我们手机上的一款APP，不同之处在于，他能学习和理解人类的语言，还能根据上下文的语境进行反应，真正像人一样和你进行交流，同时他一门应用不是技术，并且chatGPT最重要的不是技术而是工程。</p>
 <p>不仅仅只是聊天的chatGPT还能：</p>
 <ul>
-<li>[x] 写代码、修bug</li>
-<li>[x] 设计装修图</li>
-<li>[x] 写剧本，写论文</li>
-<li>[x] 解析物理题<br />
+<li>[√] 写代码、修bug</li>
+<li>[√] 设计装修图</li>
+<li>[√] 写剧本，写论文</li>
+<li>[√] 解析物理题<br />
 如果你的提问当中出现明显的错误，他还会纠正你。</li>
 </ul>
 <h2 id="chatgpt的由来"><a class="markdownIt-Anchor" href="#chatgpt的由来"></a> 【chatGPT】的由来</h2>
