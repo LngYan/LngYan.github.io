@@ -32,29 +32,29 @@ welcome_cover: /img/welcome-cover.jpg
 
 # 默认文章封面图（随机调用,支持外链）
 cover: 
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover1.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover2.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover3.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover4.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover5.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover6.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover7.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover8.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover9.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover10.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover11.png
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover12.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover13.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover14.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover15.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover16.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover17.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover18.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover19.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover20.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover21.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover22.jpg
-  - https://cdn.jsdelivr.net/gh/LngYan/CDN_Server/img/cover/cover23.jpg
+  - /img/cover/cover1.png
+  - /img/cover/cover2.png
+  - /img/cover/cover3.png
+  - /img/cover/cover4.png
+  - /img/cover/cover5.png
+  - /img/cover/cover6.png
+  - /img/cover/cover7.png
+  - /img/cover/cover8.png
+  - /img/cover/cover9.png
+  - /img/cover/cover10.png
+  - /img/cover/cover11.png
+  - /img/cover/cover12.jpg
+  - /img/cover/cover13.jpg
+  - /img/cover/cover14.jpg
+  - /img/cover/cover15.jpg
+  - /img/cover/cover16.jpg
+  - /img/cover/cover17.jpg
+  - /img/cover/cover18.jpg
+  - /img/cover/cover19.jpg
+  - /img/cover/cover20.jpg
+  - /img/cover/cover21.jpg
+  - /img/cover/cover22.jpg
+  - /img/cover/cover23.jpg
 
 
 # 是否显示Twitter分享卡片图像(图像尺寸要求：1200*600，creatorid不需要带@符号。注意：链接必须是完整url，否则Twitter将无法读取图片信息）

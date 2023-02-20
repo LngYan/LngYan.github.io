@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://LngYan.github.io
+url: https://blog.ocexa.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -138,3 +138,13 @@ markdown_it_plus:
         - plugin:
             name: markdown-it-container
             enable: true
+
+# Extensions
+plugins:
+  hexo-generator-feed
+#Feed Atom
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
