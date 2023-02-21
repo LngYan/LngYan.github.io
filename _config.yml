@@ -148,3 +148,10 @@ feed:
   type: atom
   path: atom.xml
   limit: 20
+
+  #设置百度主动推送
+#baidu_url_submit:
+#  count: 200  #比如200，代表提交最新的200个链接
+#  host: blog.ocexa.cn # 在百度站长平台中注册的域名，这个改为你自己的域名
+#  token: your_token # 请注意这是您的秘钥（百度站长密钥）
+#  path: baidu_urls.txt # 新链接会保存在此文本文档里（文本文件的文件名）

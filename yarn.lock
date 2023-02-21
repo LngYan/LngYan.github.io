@@ -1636,6 +1636,13 @@
     "serve-static" "^1.4.0"
     "write-good" "^0.10.0"
 
+"hexo-baidu-url-submit@^0.0.6":
+  "integrity" "sha512-0jDyIuw5B2Muqsjcf5Xxo1PNjxClPHP14FpB0amEAIr4wUdxk5zahImvOhkZwR9GrBhWKAPdjzmWS/xIMjzfrw=="
+  "resolved" "https://registry.npmjs.org/hexo-baidu-url-submit/-/hexo-baidu-url-submit-0.0.6.tgz"
+  "version" "0.0.6"
+  dependencies:
+    "xmlhttprequest" "^1.8.0"
+
 "hexo-cli@^4.3.0":
   "integrity" "sha512-lr46h1tK1RNQJAQZbzKYAWGsmqF5DLrW6xKEakqv/o9JqgdeempBjIm7HqjcZEUBpWij4EO65X6YJiDmT9LR7g=="
   "resolved" "https://registry.npmjs.org/hexo-cli/-/hexo-cli-4.3.0.tgz"
@@ -4071,6 +4078,11 @@
     "passive-voice" "~0.0.0"
     "too-wordy" "~0.1.0"
     "weasel-words" "~0.1.0"
+
+"xmlhttprequest@^1.8.0":
+  "integrity" "sha512-58Im/U0mlVBLM38NdZjHyhuMtCqa61469k2YP/AaPbvCoV9aQGUpbJBj1QRm2ytRiVQBD/fsw7L2bJGDVQswBA=="
+  "resolved" "https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz"
+  "version" "1.8.0"
 
 "xtend@^4.0.0", "xtend@^4.0.2", "xtend@>=4.0.0 <4.1.0-0":
   "integrity" "sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ=="
