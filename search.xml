@@ -148,11 +148,10 @@
     <title>了解chatGPT</title>
     <url>/2023/02/12/%E4%BA%86%E8%A7%A3%E7%88%86%E7%81%AB%E7%9A%84chatGPT/</url>
     <content><![CDATA[<p>近期chatGPT刷爆的所有人的首页、社交平台、朋友圈，如此火爆的背后是人工智能发展出萌芽的第一步，所以我也去网上收集了许多资料，会在这里分享给大家。</p>
-<p>图片6</p>
+<p><img src="/images/chatGPT7.jpg" alt="img" /></p>
 <h2 id="chatgpt是什么"><a class="markdownIt-Anchor" href="#chatgpt是什么"></a> 【ChatGPT是什么？】</h2>
 <p>首先，ChatGPT 是由OpenAI公司在2022年11月30日发布的一种聊天机器人模型，是由人工智能技术驱动的自然语言处理工具，其中 Chat 就是聊天。当然不是像小爱同学、siri等智能家居系统这样简单的回答以及完型填空，chatGPT更像是回答你出的命题作文一样进行写作。</p>
 <p>然后重点是后面的 <strong>【GPT】</strong> ，即 <strong>Generative Pre-trained Transformer</strong> ，中文叫 <strong>“生成型预训练变换模型”</strong>。<br />
-<img src="/images/chatGPT7.jpg" alt="img" /><br />
 简单来说，ChatGPT就像我们手机上的一款APP，不同之处在于，他能学习和理解人类的语言，还能根据上下文的语境进行反应，真正像人一样和你进行交流，同时他一门应用不是技术，并且chatGPT最重要的不是技术而是工程。</p>
 <p>不仅仅只是聊天的chatGPT还能：</p>
 <ul>
@@ -162,7 +161,7 @@
 <li>[✓] 解析物理题<br />
 如果你的提问当中出现明显的错误，他还会纠正你。</li>
 </ul>
-<h2 id="chatgpt的由来"><a class="markdownIt-Anchor" href="#chatgpt的由来"></a> 【chatGPT】的由来</h2>
+<h2 id="chatgpt的由来"><a class="markdownIt-Anchor" href="#chatgpt的由来"></a> 【chatGPT的由来】</h2>
 <p>2017年，谷歌大脑团队（Google Brain）在神经信息处理系统大会（NeurIPS，该会议为机器学习与人工智能领域的顶级学术会议）发表了一篇名为“Attention is all you need”（自我注意力是你所需要的全部）的论文。作者在文中首次提出了基于自我注意力机制（self-attention）的变换器（transformer）模型，并首次将其用于理解人类的语言，即自然语言处理。</p>
 <p>在这篇文章面世之前，自然语言处理领域的主流模型是循环神经网络（RNN，recurrent neural network）。循环神经网络模型的优点是，能更好地处理有先后顺序的数据，比如语言，但也因为如此，这种模型在处理较长序列，例如长文章、书籍时，存在模型不稳定或者模型过早停止有效训练的问题（这是由于模型训练时的梯度消失或梯度爆炸现象而导致，在此不具体展开），以及训练模型时间过长（因必须顺序处理数据，无法同时并行训练）的问题。</p>
 <p>2015年12月，OpenAI公司美国旧金山成立。特斯拉的创始人马斯克也是该公司创始人之一，为公司早期提供了资金支持（后来他从该公司退出，但保留了金主身份，并未撤资）。成立早期，OpenAI是一家非营利组织，以研发对人类社会有益、友好的人工智能技术为使命。2019年，OpenAI改变了其性质，宣布成为营利机构，这个改变与Transformer模型不无相关。</p>
@@ -180,7 +179,7 @@
 <p>第三步，该团队使用奖励模型和更多的标注过的数据继续优化微调过的语言模型，并且进行迭代。最终得到的模型被称为InstructGPT。</p>
 <p><img src="/images/chatGPT4.jpg" alt="img" /><br />
 <img src="/images/chatGPT3.jpg" alt="img" /></p>
-<h2 id="chagpt的商业价值"><a class="markdownIt-Anchor" href="#chagpt的商业价值"></a> 【ChaGPT的商业价值】</h2>
+<h2 id="chatgpt的商业价值"><a class="markdownIt-Anchor" href="#chatgpt的商业价值"></a> 【ChatGPT的商业价值】</h2>
 <p>在Open AI公司推出chatGPT程序之后，国内外的科技巨头都坐不住了：</p>
 <ul>
 <li>谷歌：自己也将推出同类型的AI聊天机器人；</li>
@@ -195,6 +194,7 @@
 <p>随着智能客服、教育、医疗、搜索引擎等应用领域不断落地，ChatGPT将与各行业应用结合后，更多付费商业模式即将落地AI人工智能的赛道将变的越来越壮大。</p>
 <p>这里不得不提到AIGC，即人工智能生成内容，ChatGPT、AI 绘画、AI数字虚拟人、AI智能客服等都是AIGC的范畴，将是未来人工智能的重要发展方向。<br />
 <img src="/images/chatGPT8.jpg" alt="img" /></p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
 <p>ChatGPT能够促使AIGC快速商业化发展，预示着自然语言处理（NLP）技术有望迅速进入平民化应用时代，应用场景不断拓宽…</p>
 <p>所以ChatGPT的一小步，是AI的一大步!</p>
 <p>ChatGPT也引发了很多人的焦虑和失业危机：</p>
@@ -213,10 +213,10 @@
 </blockquote>
 <p>以及在2023年2月出台的规范使用，媒体报道称，欧盟负责内部市场的委员蒂埃里·布雷东日前就“聊天生成预训练转换器”发表评论说，这类人工智能技术可能为商业和民生带来巨大的机遇，但同时也伴随着风险，因此欧盟正在考虑设立规章制度，以规范其使用，确保向用户提供高质量、有价值的信息和数据。</p>
 <p>随着法律规范，商业应用的陆续提上日程等一系列信息，都表明AI的发展将进入到加速阶段，那么AI究竟是何发展？让我们拭目以待吧！</p>
-<p>最后还是要强调下哈，ChatGPT本身是一个现象，现象背后的人工智能趋势，才是真正最重要的。</p>
+<p><strong>最后呢还是要强调下，ChatGPT本身是一个现象，现象背后的人工智能趋势，才是真正最重要的。</strong></p>
 <h2 id="更多"><a class="markdownIt-Anchor" href="#更多"></a> 更多</h2>
 <blockquote>
-<p>人工智能的两个条件：<br />
+<p>人工智能的两条基础理念：<br />
 1、有内在规律，有概率的、不能百分百保证预测正确。<br />
 2、可采集数据，可以做随机数据获取大量机器学习的基础。</p>
 </blockquote>
@@ -241,6 +241,38 @@
 <p><strong>人工智能就是拥有“人”的特点。</strong></p>
 <p><img src="/images/chatGPT5.jpg" alt="img" /><br />
 <img src="/images/chatGPT6.jpg" alt="img" /></p>
+]]></content>
+      <categories>
+        <category>人工智能</category>
+        <category>chatGPT</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+        <tag>chatGPT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何注册chatGPT</title>
+    <url>/2023/02/13/%E5%A6%82%E4%BD%95%E6%B3%A8%E5%86%8CchatGPT/</url>
+    <content><![CDATA[<h2 id="注册"><a class="markdownIt-Anchor" href="#注册"></a> 注册</h2>
+<p>1、魔法上网，可以使用国外的节点，<strong>但不能是香港、澳门、台湾等的节点</strong>。日本、美国、新加坡等区域亲测可以（看网络上不少网友反馈港澳台和部分地区会被openAI封锁，注册前请确认自己的环境）。<br />
+2、国外的手机号码，同样地区也是如上述网络环境之外的地区手机号（注意部分虚拟手机号的厂家无法接受验证码，请注意甄别）。</p>
+<h2 id="流程"><a class="markdownIt-Anchor" href="#流程"></a> 流程</h2>
+<p>1.打开ChatGPT的官方网站，链接为https://chat.openai.com，然后点击【Sign Up】进入下一步。<br />
+如果页面无法正常显示，需要更换其他的网络节点，或者清理下浏览器cookie再次尝试。<br />
+<img src="/images/%E6%B3%A8%E5%86%8CchatGPT1.png" alt="img" /><br />
+2.注册方式为邮箱注册，可以用微软帐号或者谷歌帐号登录，微软账号或者谷歌账号好像不需要验证，国内或者其他邮箱地址都需要进行验证（比如QQ邮箱是需要验证的）。<br />
+<img src="/images/%E6%B3%A8%E5%86%8CchatGPT2.png" alt="img" /><br />
+3.邮箱通过后，会提示你输入姓名，按照要求进行输入即可。如果显示该IP地址注册数量过多，则需要更换节点（更换节点时，无需对浏览器进行重启，刷新页面即可）。<br />
+<img src="/images/%E6%B3%A8%E5%86%8CchatGPT3.png" alt="img" />）<br />
+3.随后将会进入手机验证的环节，记住：这里不能选择国内的手机号，国内的手机号无法进行注册。<br />
+<img src="/images/%E6%B3%A8%E5%86%8CchatGPT4.png" alt="img" /><br />
+这里比较推荐俄罗斯的<a href="https://sms-activate.org">sms-activate</a>虚拟服务平台实时帮你接收验证码，非常快速而且里面不仅能接收open AI，其他平台也都能注册，强推！！！<br />
+<img src="/images/%E6%B3%A8%E5%86%8CchatGPT6.png" alt="img" /><br />
+注意，在接收验证码时，建议使用低价的印尼等手机号，印度经常挤爆收不到；如果长时间没有收到验证码，可更换成其他区域尝试。<br />
+重点是：在手机验证页面，一定要注意选择正确的国家（注意国旗）！一定要注意选择正确的国家！一定要注意选择正确的国家！<br />
+4.注册完毕后，就可以自由自在的使用ChatGPT了。<br />
+<img src="/images/%E6%B3%A8%E5%86%8CchatGPT5.png" alt="img" /></p>
 ]]></content>
       <categories>
         <category>人工智能</category>
@@ -459,6 +491,374 @@ Excel 数据分析功能十分强大，不仅提供简单的数据处理功能�
         <tag>数据分析</tag>
         <tag>Excel</tag>
         <tag>数据可视化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>机器学习基础理解</title>
+    <url>/2023/02/19/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%90%86%E8%A7%A3/</url>
+    <content><![CDATA[<h2 id="数据挖掘是什么"><a class="markdownIt-Anchor" href="#数据挖掘是什么"></a> 数据挖掘是什么</h2>
+<p>数据挖掘也叫机器学习，是由人工智能之父<strong>艾伦.图灵</strong>提出，其最大的成就就是图灵测试。简单理解为就是一个人和一个机器跟你去聊天，你不知道对方是人还是机器，如果经过聊天后，你分辨不出谁是人谁是机器则说明这个机器通过了图灵测试。</p>
+<p><strong>机器学习</strong>是实现<strong>人工智能</strong>的一种技术手段，官方给出的人工智能诠释为：“机器学习就是从【数据】中自动分析获得【规律（模型）】，并利用规律对未知数据进行【预测】”。在通俗点讲就是“机器学习”开始是一位普通的厨师，通过不断的锻炼和菜谱（算法模型），将样本数据（食材）变为一道道美食，最终成为一位米其林大厨。</p>
+<h2 id="数据挖掘基础"><a class="markdownIt-Anchor" href="#数据挖掘基础"></a> 数据挖掘基础</h2>
+<ul>
+<li>需要明确的几点：<br />
+1.机器学习最终进行预测出来的结果其实都是通过相关的算法计算出来的结果！所以说在机器学习中算法是核心，数据是计算的基础。<br />
+2.找准定位：大部分复杂模型的算法设计都是算法工程师（博士，硕士）在做，而我们只需要：
+<ul>
+<li>学会分析问题，使用机器学习相关算法完成对应的需求</li>
+<li>掌握算法的基本思想，学会对不同问题选择对应的算法去解决</li>
+<li>学会利用框架和库解决问题</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据挖掘算法分类"><a class="markdownIt-Anchor" href="#数据挖掘算法分类"></a> 数据挖掘算法分类</h3>
+<ul>
+<li>分类和回归问题
+<ul>
+<li>分类算法基于的是【标签数据】为【离散型】数据<br />
+回归算法基于的是【标签数据】为【连续型】数据</li>
+<li>结论：在社会中产生的数据必然是离散型或者是连续型的数据，那么企业针对数据所产生的需求也无非是分类问题或者回归问题。</li>
+</ul>
+</li>
+<li>分类问题应用：
+<ul>
+<li>人脸识别图像处理</li>
+<li>文本分类</li>
+<li>银行分类客户贷款风险</li>
+</ul>
+</li>
+<li>回归问题应用：
+<ul>
+<li>股票</li>
+<li>房价预测</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据挖掘开发流程"><a class="markdownIt-Anchor" href="#数据挖掘开发流程"></a> 数据挖掘开发流程</h3>
+<ul>
+<li>1.数据采集
+<ul>
+<li>公司内部产生的数据</li>
+<li>和其他公司合作获取的数据</li>
+<li>购买的数据</li>
+</ul>
+</li>
+<li>2.分析数据所对应要解决需求或者问题是什么？根据目标数据推断问题属于回归还是分类！</li>
+<li>3.数据的基本处理
+<ul>
+<li>数据清洗</li>
+<li>合并</li>
+<li>级联等</li>
+</ul>
+</li>
+<li>4.特征工程：对特征进行处理
+<ul>
+<li>特征抽取</li>
+<li>特征预处理</li>
+<li>降维等</li>
+</ul>
+</li>
+<li>5.选择合适的模型，然后对其进行训练</li>
+<li>6.模型的评估</li>
+<li>7.上线使用</li>
+</ul>
+<h2 id="数据挖掘中的数据类型"><a class="markdownIt-Anchor" href="#数据挖掘中的数据类型"></a> 数据挖掘中的数据类型</h2>
+<ul>
+<li>机器学习中的数据类型分为：<br />
+1.离散型数据：
+<ul>
+<li>取值范围是有限个值或者一个数列构成的，表示分类情况，如：企业数量 产品数量等</li>
+<li>离散变量则是通过计数方式取得的，即是对所要统计的对象进行计数，增长量非固定的，如：一个地区的企业数目可以是今年只有一家，而第二年开了十家；一个企业的职工人数今年只有10人，第二年一次招聘了20人等。<br />
+2.连续型数据：</li>
+<li>连续变量是一直叠加上去的，增长量可以划分为固定的单位，即：1,2,3…… 例如：一个人的身高，他首先长到1.51，然后才能长到1.52，1.53……。</li>
+<li>取值范围是一个区间，它可以在该区间中连续取值，即连续型变量可以取到区间中的任意值，并且有度量单位。例如：身高、年龄、体重、金额<br />
+注意：</li>
+<li>连续型数据的增长是有规律的,离散型数据的增长是没有规律的。</li>
+<li>连续性数据是区间可分的，而离散型数据是区间不可分的。</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据挖掘数据集划分"><a class="markdownIt-Anchor" href="#数据挖掘数据集划分"></a> 数据挖掘数据集划分</h3>
+<p>是从数据中自动分析获得规律，并利用规律对未知数据进行预测。换句话说，我们的模型一定是要经过样本数据对其进行训练，才可以对未知数据进行预测的。<br />
+问：我们得到数据后，是否将数据全部用来训练模型呢？<br />
+当然不是的啦！因为我们如果模型（数据的规律）都是从数据中得来的，那么该模型的性能评估如何进行呢？还是基于对原先的数据进行预测吗？可想不是的，如果模型对原先的数据进行预测，由于模型（数据的规律）本来就是从该数据中获取的，所以预测的精度几乎会是百分之百。所以想要评估模型的好坏，需要使用一组新数据对模型进行评估。<br />
+因此我们需要将原先的样本数据拆分成两部分：<br />
+训练集：训练模型<br />
+测试集：评估模型<br />
+不同类型的模型对应的评估方式是不一样的</p>
+<ul>
+<li>数据集划分的API<br />
+from sklearn.model_selection import train_test_split<br />
+train_test_split(x,y,test_size,random_state)参数介绍：<br />
+x：特征<br />
+y：目标<br />
+test_size：测试集的比例<br />
+random_state：打乱的随机种子<br />
+返回值：训练特征，测试特征，训练目标，测试目标</li>
+</ul>
+<h2 id="特征工程"><a class="markdownIt-Anchor" href="#特征工程"></a> 特征工程</h2>
+<ul>
+<li>
+<p>为什么需要特征工程<br />
+样本数据中的特征有可能会存在缺失值，重复值，异常值等等，那么我们是需要对特征中的相关的噪点数据进行处理的，那么处理的目的就是为了营造出一个更纯净的样本集（数据集越纯净则越便于让模型总结出数据集中潜在的规律），让模型基于这组数据可以有更好的预测能力。当然特征工程不是单单只是处理上述操作！</p>
+</li>
+<li>
+<p>什么是特征工程<br />
+特征工程是将原始数据转换为更好的能代表模型能够处理数据的潜在问题对应特征的过程，从而提高对未知数据预测的准确性。所以特征工程就是对特征的相关处理！<br />
+比如AlphaGo学习的数据中既有棋谱，又有食谱还有歌词，那么一些干扰的数据绝对会影响AlphaGo的学习。</p>
+</li>
+<li>
+<p>特征工程的意义<br />
+直接影响模型预测的结果</p>
+</li>
+<li>
+<p>如何实现特征工程<br />
+工具：sk-learn</p>
+</li>
+<li>
+<p>sklean介绍</p>
+<ul>
+<li>是python语言中的机器学习工具，包含了很多知名的机器学习算法的实现，其文档完善，容易上手。<br />
+功能：<br />
+分类模型<br />
+回归模型<br />
+聚类模型<br />
+特征工程</li>
+</ul>
+</li>
+</ul>
+<h3 id="特征抽取"><a class="markdownIt-Anchor" href="#特征抽取"></a> 特征抽取</h3>
+<p>目的：<br />
+我们所采集到样本中的特征数据往往很多时候为字符串或者其他类型的数据，我们知道电脑只可以识别二进制数值型的数据，如果把字符串给电脑，电脑是看不懂的。机器学习学习的数据如果不是数值型的数据，它是识别不了的。</p>
+<p>字符串类型的数据我们也可以成为分类变量</p>
+<ul>
+<li>
+<p>无序分类变量</p>
+<ul>
+<li>说明事物类别的一个名称，如性别有男女两种，二者无大小之分，无顺序之分，还有如血型、民族等</li>
+</ul>
+</li>
+<li>
+<p>有序分类变量</p>
+<ul>
+<li>也是说明事物类型的一个名称，但是有次序之分，例如：满意度分为满意 一般 不满意，三者是有顺序的，you大小之分</li>
+</ul>
+</li>
+</ul>
+<p>特征值化：将非数值型的特征转换成数值型的特征</p>
+<p>效果演示：<br />
+将字符串转换成数字</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> CountVectorizer</span><br><span class="line">vector = CountVectorizer()</span><br><span class="line">res = vector.fit_transform([<span class="string">&#x27;lift is short,i love python&#x27;</span>,<span class="string">&#x27;lift is too long,i hate python&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(res.toarray())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>输出：[[0 1 1 0 1 1 1 0]<br />
+[1 1 1 1 0 1 0 1]]</p>
+<p>演示后得出：<br />
+特征抽取对文本等数据进行特征值化。特征值化是为了让机器更好的理解数据。</p>
+<h4 id="字典特征抽取onehot编码"><a class="markdownIt-Anchor" href="#字典特征抽取onehot编码"></a> 字典特征抽取——OneHot编码</h4>
+<p><img src="/images/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%90%86%E8%A7%A31.png" alt="img" /></p>
+<ul>
+<li>为什么需要onehot编码呢？
+<ul>
+<li>特征抽取主要目的就是对非数值型的数据进行特征值化！如果现在需要对下图中的human和alien进行手动特征值化Alien为4，human<br />
+<img src="/images/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%90%86%E8%A7%A32.png" alt="img" /></li>
+</ul>
+</li>
+<li>对其进行One-Hot编码后：<br />
+<img src="/images/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%90%86%E8%A7%A33.png" alt="img" /></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#基于pandas实现one-hot编码</span></span><br><span class="line"><span class="comment">#    pd.get_dummies(df[&#x27;col&#x27;])</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>总结：</p>
+<ul>
+<li>理想情况下，无序分类变量的特征使用one-hot编码进行特征值化，有序分类变量的特征用map映射。</li>
+</ul>
+<h4 id="文本特征抽取"><a class="markdownIt-Anchor" href="#文本特征抽取"></a> 文本特征抽取</h4>
+<ul>
+<li>作用：对文本数据进行特征值化</li>
+<li>API:from sklearn.feature_extraction.text import CountVectorizer</li>
+<li>fit_transform(X):X为文本或者包含文本字符串的可迭代对象，返回sparse矩阵</li>
+<li>inverse_transform(X)：X为array数组或者sparse矩阵，返回转换之前的格式数据</li>
+<li>get_feature_names()</li>
+<li>toarray()：将sparse矩阵换成数组</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.feature_extraction.text <span class="keyword">import</span> CountVectorizer</span><br><span class="line"></span><br><span class="line">alist = [</span><br><span class="line"></span><br><span class="line">         <span class="string">&#x27;left is is short,i love python&#x27;</span>,</span><br><span class="line"></span><br><span class="line">         <span class="string">&#x27;left is too long,i hate python&#x27;</span></span><br><span class="line"></span><br><span class="line">        ]</span><br><span class="line"></span><br><span class="line">tool = CountVectorizer()</span><br><span class="line"></span><br><span class="line">ret = tool.fit_transform(alist)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(tool.get_feature_names())</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(ret.toarray())</span><br><span class="line"></span><br><span class="line">[<span class="string">&#x27;hate&#x27;</span>, <span class="string">&#x27;is&#x27;</span>, <span class="string">&#x27;left&#x27;</span>, <span class="string">&#x27;long&#x27;</span>, <span class="string">&#x27;love&#x27;</span>, <span class="string">&#x27;python&#x27;</span>, <span class="string">&#x27;short&#x27;</span>, <span class="string">&#x27;too&#x27;</span>]</span><br><span class="line">[[<span class="number">0</span> <span class="number">2</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span>]</span><br><span class="line"> [<span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span> <span class="number">0</span> <span class="number">1</span>]]</span><br></pre></td></tr></table></figure>
+<p>上述文本抽取一般是给英文文章使用的，如果是中文文章，就要使用到“jieba分词”插件</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#jieba分词安装</span></span><br><span class="line">pip install jieba</span><br><span class="line"></span><br><span class="line"><span class="comment">#jieba分词的基本使用</span></span><br><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line">s = <span class="string">&#x27;分词作用到文本特征抽取的综合使用&#x27;</span></span><br><span class="line">ret = <span class="built_in">list</span>(jieba.cut(s))</span><br><span class="line"><span class="built_in">print</span>(ret)</span><br><span class="line"></span><br><span class="line"><span class="comment">#分词作用到文本特征抽取的综合使用</span></span><br><span class="line"><span class="keyword">import</span> jieba</span><br><span class="line">alist = [</span><br><span class="line">         <span class="string">&#x27;对有标点符号的中文文本进行特征抽取&#x27;</span>,</span><br><span class="line">         <span class="string">&#x27;因为在自然语言处理中，我们是需要将一段中文文本中相关的词语&#x27;</span></span><br><span class="line">        ]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">jieba_alist = []</span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> alist:</span><br><span class="line">    ret = <span class="built_in">list</span>(jieba.cut(item))</span><br><span class="line">    s_ret = <span class="string">&#x27; &#x27;</span>.join(ret)<span class="comment">#ret==&gt;[你好，我也好]  &#x27; &#x27;.join(list)==&gt;&quot;你好 我也好&quot;</span></span><br><span class="line">    jieba_alist.append(s_ret)</span><br><span class="line">    </span><br><span class="line">tool = CountVectorizer()</span><br><span class="line">ret = tool.fit_transform(jieba_alist)</span><br><span class="line"><span class="built_in">print</span>(tool.get_feature_names())</span><br><span class="line"><span class="built_in">print</span>(ret.toarray())</span><br></pre></td></tr></table></figure>
+<h3 id="特征的预处理"><a class="markdownIt-Anchor" href="#特征的预处理"></a> 特征的预处理</h3>
+<p>对数值性数据一般进行<strong>无量纲化</strong>处理</p>
+<ul>
+<li>
+<p>无量纲化：</p>
+<ul>
+<li>在机器学习算法实践中，我们往往有着将不同规格的数据转换到同一规格，或不同分布的数据转换到某个特定分布的需求这种需求统称为将数据“无量纲化”。</li>
+<li>譬如梯度和矩阵为核心的算法中，譬如逻辑回归，支持向量机，神经 网络，无量纲化可以加快求解速度;</li>
+<li>而在距离类模型，譬如K近邻，K-Means聚类中，无量纲化可以帮我们提升模型精度，避免某一个取值范围特别大的特征对距离计算造成影响。</li>
+<li>一个特例是决策树和树的集成算法们，对决策 树我们不需要无量纲化，决策树可以把任意数据都处理得很好。<br />
+那么预处理就是用来实现无量纲化的方式。<br />
+含义：特征抽取后我们就可以获取对应的数值型的样本数据啦，然后就可以进行数据处理了。<br />
+概念：通过特定的统计方法（数学方法），将数据转换成算法要求的数据<br />
+方式：
+<ul>
+<li>归一化</li>
+<li>标准化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>归一化的实现：</p>
+<ul>
+<li>API:from sklearn.preprocessing import MinMaxScaler</li>
+<li>参数：feature_range表示缩放范围，通常使用(0,1)</li>
+<li>作用：使得某一个特征对最终结果不会造成很大的影响</li>
+<li>问题：如果数据中存在的异常值比较多，会对结果造成什么样的影响？
+<ul>
+<li>结合着归一化计算的公式可知，异常值对原始特征中的最大值和最小值的影响很大，因此也会影响对归一化之后的值。这个也是归一化的一个弊端，无法很好的处理异常值。</li>
+</ul>
+</li>
+<li>归一化总结：
+<ul>
+<li>在特定场景下最大值和最小值是变化的，另外最大最小值很容易受到异常值的影响，所以这种归一化的方式具有一定的局限性。因此引出了一种更好的方式叫做：标准化！！！</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>标准化的处理</p>
+<ul>
+<li>当数据按均值中心化后，再按标准差缩放，数据就会服从为均值为0，方差为1的正态分布(即标准正态分 布)，而这个过程，就叫做数据标准化(Standardization，又称Z-score normalization)。</li>
+<li>API
+<ul>
+<li>处理后，每列所有的数据都聚集在均值为0，标准差为1范围附近</li>
+<li>标准化API:from sklearn.preprocessing import StandardScaler
+<ul>
+<li>fit_transform(X):对X进行标准化</li>
+<li>mean_：均值</li>
+<li>var_:方差</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>归一化和标准化总结：</p>
+<ul>
+<li>对于归一化来说，如果出现了异常值则会响应特征的最大最小值，那么最终结果会受到比较大影响</li>
+<li>对于标准化来说，如果出现异常点，由于具有一定的数据量，少量的异常点对于平均值的影响并不大，从而标准差改变比较少。</li>
+</ul>
+</li>
+<li>
+<p>StandardScaler和MinMaxScaler选哪个?</p>
+<ul>
+<li>看情况。大多数机器学习算法中，会选择StandardScaler来进行特征缩放，因为MinMaxScaler对异常值非常敏感。在PCA，聚类，逻辑回归，支持向量机，神经网络这些算法中，StandardScaler往往是最好的选择。 MinMaxScaler在不涉及距离度量、梯度、协方差计算以及数据需要被压缩到特定区间时使用广泛，比如数字图像处理中量化像素强度时，都会使用MinMaxScaler将数据压缩于[0,1]区间之中。</li>
+<li>建议先试试看StandardScaler，效果不好换MinMaxScaler。</li>
+</ul>
+</li>
+</ul>
+<h4 id="特征选择"><a class="markdownIt-Anchor" href="#特征选择"></a> 特征选择</h4>
+<p>从特征中选择出有意义对模型有帮助的特征作为最终的机器学习输入的数据！</p>
+<ul>
+<li>
+<p>切记：</p>
+<ul>
+<li>在做特征选择之前，有三件非常重要的事:跟数据提供者联系，跟数据提供者沟通，跟数据提供者开会。</li>
+<li>一定要抓住给你提供数据的人，尤其是理解业务和数据含义的人，跟他们聊一段时间。技术能够让模型起飞，前提是你和业务人员一样理解数据。所以特征选择的第一步，其实是根据我们的目标，用业务常识来选择特征。</li>
+</ul>
+</li>
+<li>
+<p>特征选择的原因：</p>
+<ul>
+<li>冗余：部分特征的相关度高，容易消耗计算机的性能
+<ul>
+<li>在房价预测中，有高度和楼层这两个特征</li>
+</ul>
+</li>
+<li>噪点：部分特征对预测结果有偏执影响
+<ul>
+<li>在房价预测中，其中有户主血型这个特征</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>特征选择的实现：</p>
+<ul>
+<li>人为对不相关的特征进行主观舍弃</li>
+<li>当然了，在真正的数据应用领域，比如金融，医疗，电商，我们的数据特征非常多，这样明显，那如果遇见极端情况，我们无法依赖对业务的理解来选择特征，该怎么办呢?
+<ul>
+<li>在已有特征和对应预测结果的基础上，使用相关的工具过滤掉一些无用或权重较低的特征
+<ul>
+<li>工具：
+<ul>
+<li>Filter（过滤式）【主要讲解】</li>
+<li>PCA降维</li>
+<li>相关性分析</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Filter过滤式（方差过滤）：</p>
+<ul>
+<li>原理：这是通过特征本身的方差来筛选特征的类。比如一个特征本身的方差很小，就表示样本在这个特征上基本没有差异，可能特征中的大多数值都一样，甚至整个特征的取值都相同，那这个特征对于样本区分没有什么作用。所以无论接下来的特征工程要做什么，都要优先消除方差为0或者方差极低的特征。
+<ul>
+<li>比如：朝阳区的房价预测，其中样本有一列特征为温度，则要知道朝阳区包含在样本中的房子对应的气象温度几乎一致或者大同小异，则温度特征则对房价的区分是无意义的。</li>
+</ul>
+</li>
+<li>API:from sklearn.feature_selection import VarianceThreshold</li>
+<li>VarianceThreshold(threshold=x)threshold方差的值，删除所有方差低于x的特征，默认值为0表示保留所有方差为非0的特征</li>
+<li>fit_transform(X)#:X为特征</li>
+</ul>
+</li>
+<li>
+<p>PCA降维（主成分分析）：是一种分析，简化数据集的技术，也是【矩阵分解算法】的核心算法</p>
+<ul>
+<li>降维的维度值的就是特征的种类。</li>
+<li>思想：如何最好的对一个立体的物体用二维表示<br />
+<img src="/images/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E7%90%86%E8%A7%A34.png" alt="img" /></li>
+<li>当然，第四张二维图片可以比较好的标识一个立体三维的水壶。但是也要清楚，用一个低纬度去表示高纬度的物体时，一定会造成一些信息的差异。可以让低纬度也可以能正确的表示高纬度的事物，或者信息差异最小。</li>
+<li>目的：特征数量达到上百，上千的时候，考虑数据的优化。使数据维度压缩，尽可能降低源数据的维度（复杂度），损失少量信息。</li>
+<li>作用：可以削减回归分析或者聚类分析中特征的数量</li>
+<li>PCA语法
+<ul>
+<li>from sklearn.decomposition import PCA</li>
+<li>pca = PCA(n_components=None)
+<ul>
+<li>n_components可以为小数（保留特征的百分比），整数（减少到的特征数量）</li>
+</ul>
+</li>
+<li>pca.fit_transform(X)</li>
+<li>相关系数进行特征选择</li>
+<li>希望样本的特征之间相关性越低越好</li>
+<li>pandas中有个一方法corr可以计算df每一列的相关系数</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>相关系数：（不重要）</p>
+<ul>
+<li>作用：用来衡量两组数据之间的相关性</li>
+<li>相关系数的取值范围是：1，-1</li>
+<li>相关系数越接近1：说明两组数据之间越呈现正相关，否则呈现负相关。</li>
+<li>在相关系数实现的特征选择中，我们只考虑特征之间的相关性不具体考虑正负相关</li>
+<li>规律：相关系数大于0.6就表示两组数据之间呈现高相关性</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>数据挖掘</category>
+        <category>机器学习</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>数据挖掘</tag>
+        <tag>机器学习</tag>
       </tags>
   </entry>
 </search>
