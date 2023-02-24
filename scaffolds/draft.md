@@ -1,5 +1,7 @@
 ---
 title: My awesome title
+top: 
+date: 
 categories: 
     - 分类1
     - 分类2
