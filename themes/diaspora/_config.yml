@@ -147,3 +147,4 @@ copyright:
     # - <script src="xxxx"></script>
 #    -     <script>addEventListener("DOMContentLoaded",function(){let models=[{width:800,height:600,right:"0px",bottom:"0px",basePath:"live2d_models/",role:"lengyan",background:"",opacity:1,mobile:false,},];new Live2dLoader(models)});</script>
 
+baidu_push: true
