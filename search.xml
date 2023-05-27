@@ -1128,7 +1128,7 @@ random_state：打乱的随机种子<br />
 </li>
 </ul>
 <p><img src="/images/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%923.png" alt="img" /></p>
-<p>在预测中，肯定也会出现 一种情况，误差</p>
+<p>在预测中，肯定也会出现一种情况，误差</p>
 <ul>
 <li>那我们如何处理误差呢？在处理误差之前，我们必须先要知道一个回归算法的特性：
 <ul>
@@ -1189,6 +1189,302 @@ random_state：打乱的随机种子<br />
         <tag>数据挖掘</tag>
         <tag>机器学习</tag>
         <tag>回归算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>过拟合以及欠拟合的处理</title>
+    <url>/2023/04/27/%E8%BF%87%E6%8B%9F%E5%90%88%E4%BB%A5%E5%8F%8A%E6%AC%A0%E6%8B%9F%E5%90%88/</url>
+    <content><![CDATA[<h1 id="什么是欠拟合过拟合"><a class="markdownIt-Anchor" href="#什么是欠拟合过拟合"></a> 什么是欠拟合&amp;过拟合？</h1>
+<ul>
+<li>问题：训练好的模型在训练集上表现的预测效果很好，但是在测试集上却有很大的问题和误差，why，让我们看下以下两个案例？
+<ul>
+<li>案例1：
+<ul>
+<li>现在有一组天鹅的特征数据然后对模型进行训练，然后模型学习到的内容是有翅膀，嘴巴长的就是天鹅。然后使用模型进行预测，该模型可能会将所有符合这两个特征的动物都预测为天鹅，则肯定会有误差的，因为鹦鹉，秃鹫都符合有翅膀和嘴巴长的特征。
+<ul>
+<li>原因：模型学习到的天鹅的特征太少了，导致区分标准太粗糙，不能准确的识别出天鹅。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>案例2：
+<ul>
+<li>更新了样本的特征数据了，增加了一些特征，然后训练模型。模型这次学习到的内容是，有翅膀、嘴巴长、白色、体型像2、脖子长且有弯度的就是天鹅。然后开始使用模型进行预测，现在一组测试数据为鹦鹉，因为鹦鹉的体型小，脖子短不符合天鹅的特征，则预测结果为不是天鹅。然后又有一组特征为黑天鹅，结果因为颜色不是白色，预测成了黑天鹅。
+<ul>
+<li>原因：现在模型学习到的特征已经基本可以区分天鹅和其他动物了。但是学习到的特征中有一项是羽毛是白色，那么就会导致将黑天鹅无法识别出来。也就是机器学习到的特征太依赖或者太符合训练数据了。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>欠拟合：案例1中的场景就可以表示欠拟合
+<ul>
+<li>欠拟合是指模型在训练集、验证集和测试集上均表现不佳的情况；（模型过于简单）</li>
+</ul>
+</li>
+<li>过拟合：案例2中的场景就可以表示过拟合
+<ul>
+<li>过拟合是指模型在训练集上表现很好，到了验证和测试阶段就很差，即模型的泛化能力很差。（模型过于复杂）</li>
+</ul>
+</li>
+</ul>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%881.png" alt="img" /></p>
+<h1 id="关于欠拟合和过拟合的解决"><a class="markdownIt-Anchor" href="#关于欠拟合和过拟合的解决"></a> 关于欠拟合和过拟合的解决</h1>
+<ul>
+<li>欠拟合：
+<ul>
+<li>原因：<strong>模型学习到样本的特征太少。</strong>
+<ul>
+<li>解决：增加样本的特征数量（多项式回归）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>过拟合：
+<ul>
+<li>原因：<strong>原始特征过多，存在一些嘈杂特征。</strong>
+<ul>
+<li>解决：
+<ul>
+<li>进行特征选择，消除关联性大的特征（很难做）</li>
+<li>正则化之岭回归（掌握）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>模型的复杂度–》回归出直线or曲线：
+<ul>
+<li>我们的回归模型最终回归出的一定是直线吗(y=wx+b)？有没有可能是曲线（非线性）呢（y=wx**2+b）？
+<ul>
+<li>我们都知道回归模型算法就是在寻找特征值和目标值之间存在的某种关系，那么这种关系越复杂则表示训练出的模型的复杂度越高，反之越低。</li>
+<li>模型的复杂度是由特征和目标之间的关系导致的！特征和目标之间的关系不仅仅是线性关系！</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="欠拟合的处理多项式回归"><a class="markdownIt-Anchor" href="#欠拟合的处理多项式回归"></a> 欠拟合的处理：多项式回归</h2>
+<ul>
+<li>为了解决欠拟合的情 经常要提高线性的次数（高次多项式）建立模型拟合曲线，次数过高会导致过拟合，次数不够会欠拟合。
+<ul>
+<li>y = w*x + b   一次多项式函数</li>
+<li>y = w1<em>x^2 + w2</em>x + b  二次多项式函数</li>
+<li>y = w1<em>x^3 + w2</em>x^2 + w3*x + b  三次多项式函数</li>
+<li>。。。
+<ul>
+<li>高次多项式函数的表示为曲线。<br />
+实例效果：</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x = np.linspace(<span class="number">0</span>,<span class="number">10</span>,<span class="number">20</span>)</span><br><span class="line">y = <span class="number">2</span> * x + <span class="number">3</span></span><br><span class="line">plt.plot(x,y)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%882.png" alt="img" /></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x = np.linspace(<span class="number">0</span>,<span class="number">10</span>,<span class="number">20</span>)</span><br><span class="line">y = <span class="number">2</span> * x + <span class="number">2</span>*x**<span class="number">2</span> + <span class="number">3</span></span><br><span class="line">plt.plot(x,y)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%883.png" alt="img" /></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x = np.linspace(<span class="number">0</span>,<span class="number">10</span>,<span class="number">20</span>)</span><br><span class="line">y = <span class="number">2</span> * x + <span class="number">2</span>*x**<span class="number">2</span> + x**<span class="number">3</span> + <span class="number">3</span></span><br><span class="line">plt.plot(x,y)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%884.png" alt="img" /><br />
+相对于线性回归模型y=wx+b只能解决线性(回归出的为直线)问题，多项式回归能够解决非线性回归（回归出的为曲线）问题。<br />
+拿最简单的线性模型来说，其数学表达式可以表示为：y=wx+b，它表示的是一条直线，而多项式回归则可以表示成：y=w1x∧2+w2x+b,它表示的是二次曲线，<h4>实际上，多项式回归可以看成特殊的线性模型</h4>，即把x∧2看成一个特征，把x看成另一个特征，这样就可以表示成y=w1z+w2x+b,其中z=x∧2,这样多项式回归实际上就变成线性回归了。<br />
+其中的y=w1x∧2+w2x+b就是所谓的二次多项式:aX∧2+bX+c(a≠0).<br />
+当然还可以将y=wx+b转为更高次的多项式。是否需要转成更高次的多项式取决于我们想要拟合样本的程度了，更高次的多项式可以更好的拟合我们的样本数据，但是也不是一定的，很可能会造成过拟合。</p>
+<ul>
+<li>建立二次多项式线性回归模型进行预测
+<ul>
+<li>根据二次多项式公式可知，需要给原始特征添加更高次的特征数据x^2.
+<ul>
+<li>y=w1x∧2+w2x+b</li>
+</ul>
+</li>
+<li>如何给样本添加高次的特征数据呢？
+<ul>
+<li>使用sklearn.preprocessing.PolynomialFeatures来进行更高次特征的构造
+<ul>
+<li>它是使用多项式的方法来进行的，如果有a，b两个特征，那么它的2次多项式为（1,a,b,a^2,ab, b^2）</li>
+<li>PolynomialFeatures有三个参数
+<ul>
+<li>degree：控制多项式的度</li>
+<li>interaction_only： 默认为False，如果指定为True，上面的二次项中没有a<sup>2和b</sup>2。</li>
+<li>include_bias：默认为True。如果为False的话，那么就不会有上面的1那一项</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#创建一个随机数表</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> PolynomialFeatures</span><br><span class="line">feature = pd.DataFrame(data=np.random.randint(<span class="number">0</span>,<span class="number">10</span>,size=(<span class="number">5</span>,<span class="number">2</span>)))</span><br><span class="line"><span class="comment">#给原始一个维度的特征增加高次项特征</span></span><br><span class="line">tool = PolynomialFeatures(degree=<span class="number">2</span>,include_bias=<span class="literal">False</span>)</span><br><span class="line">ret = tool.fit_transform(feature)</span><br><span class="line">ret</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%885.png" alt="img" /></p>
+<h3 id="示例"><a class="markdownIt-Anchor" href="#示例"></a> 示例</h3>
+<p>下面模拟根据蛋糕的直径大小预测蛋糕价格。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LinearRegression</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> PolynomialFeatures</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line"><span class="comment"># 样本的训练数据，特征和目标值</span></span><br><span class="line">x_train = [[<span class="number">6</span>], [<span class="number">8</span>], [<span class="number">10</span>], [<span class="number">14</span>], [<span class="number">18</span>]] <span class="comment">#大小</span></span><br><span class="line">y_train = [[<span class="number">7</span>], [<span class="number">9</span>], [<span class="number">13</span>], [<span class="number">17.5</span>], [<span class="number">18</span>]]<span class="comment">#价格</span></span><br><span class="line">plt.scatter(x_train,y_train) <span class="comment">#原始样本的分布情况</span></span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%886.png" alt="img" /></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#建模</span></span><br><span class="line">linner = LinearRegression()</span><br><span class="line">linner.fit(x_train,y_train) <span class="comment">#fit参数的X为啥是大写？大写的X是要求我们传入模型的特征必须是二维的（矩阵）</span></span><br><span class="line"><span class="comment">#模型预测的结果</span></span><br><span class="line"><span class="keyword">from</span> sklearn.metrics <span class="keyword">import</span> mean_squared_error,r2_score</span><br><span class="line">y_pred = linner.predict(x_train)</span><br><span class="line"><span class="comment">#画图</span></span><br><span class="line">plt.scatter(x_train,y_train)</span><br><span class="line">plt.plot(x_train,y_pred)</span><br><span class="line"></span><br><span class="line">mean_squared_error(y_train,y_pred),r2_score(y_train,y_pred)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%887.png" alt="img" /></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#给数据增加2次项特征</span></span><br><span class="line">tool = PolynomialFeatures(degree=<span class="number">2</span>,include_bias=<span class="literal">False</span>)</span><br><span class="line">d_2_x_train = tool.fit_transform(x_train)</span><br><span class="line"></span><br><span class="line"><span class="comment">#建模</span></span><br><span class="line">linner = LinearRegression()</span><br><span class="line">linner.fit(d_2_x_train,y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment">#画图：无需理解</span></span><br><span class="line">plt.scatter(x_train,y_train)</span><br><span class="line">y_pred = linner.predict(d_2_x_train)</span><br><span class="line">plt.plot(x_train,y_pred)</span><br><span class="line"></span><br><span class="line">mean_squared_error(y_train,y_pred),r2_score(y_train,y_pred)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%888.png" alt="img" /></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#给数据增加3次项特征</span></span><br><span class="line">tool = PolynomialFeatures(degree=<span class="number">3</span>,include_bias=<span class="literal">False</span>)</span><br><span class="line">d_3_x_train = tool.fit_transform(x_train)</span><br><span class="line"><span class="comment">#建模</span></span><br><span class="line">linner = LinearRegression()</span><br><span class="line">linner.fit(d_3_x_train,y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment">#画图：无需理解</span></span><br><span class="line">plt.scatter(x_train,y_train)</span><br><span class="line">y_pred = linner.predict(d_3_x_train)</span><br><span class="line">plt.plot(x_train,y_pred)</span><br><span class="line">mean_squared_error(y_train,y_pred),r2_score(y_train,y_pred)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%889.png" alt="img" /></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#给数据增加4次项特征</span></span><br><span class="line">tool = PolynomialFeatures(degree=<span class="number">4</span>,include_bias=<span class="literal">False</span>)</span><br><span class="line">d_4_x_train = tool.fit_transform(x_train)</span><br><span class="line"><span class="comment">#建模</span></span><br><span class="line">linner = LinearRegression()</span><br><span class="line">linner.fit(d_4_x_train,y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment">#画图：无需理解</span></span><br><span class="line">plt.scatter(x_train,y_train)</span><br><span class="line">y_pred = linner.predict(d_4_x_train)</span><br><span class="line">plt.plot(x_train,y_pred)</span><br><span class="line">mean_squared_error(y_train,y_pred),r2_score(y_train,y_pred)</span><br></pre></td></tr></table></figure>
+<p><img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%8810.png" alt="img" /></p>
+<ul>
+<li><strong>使用增加高次项特征的策略查看是够可以适当解决房价预测模型的欠拟合症状</strong></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#分别增加2、3、4次项新维度特征”degree = 2、3、4</span></span><br><span class="line">tool = PolynomialFeatures(degree=<span class="number">2</span>,include_bias=<span class="literal">False</span>)</span><br><span class="line">d_2_feature = tool.fit_transform(feature)</span><br><span class="line"></span><br><span class="line"><span class="comment">#数据集切分</span></span><br><span class="line">x_train,x_test,y_train,y_test = train_test_split(d_2_feature,target,test_size=<span class="number">0.2</span>,random_state=<span class="number">2020</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#建模</span></span><br><span class="line">model = LinearRegression()</span><br><span class="line">model.fit(x_train,y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment">#模型评估</span></span><br><span class="line">y_true_test = y_test</span><br><span class="line">y_pred_test = model.predict(x_test)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;模型在测试集的表现结果:&#x27;</span>,MSE(y_true_test,y_pred_test),r2(y_true_test,y_pred_test))</span><br><span class="line"></span><br><span class="line">y_true_train = y_train</span><br><span class="line">y_pred_train = model.predict(x_train)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;模型在训练集的表现结果:&#x27;</span>,MSE(y_true_train,y_pred_train),r2(y_true_train,y_pred_train))</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>
+<p>下面是原始特征训练模型后，对应的评价结果</p>
+<ul>
+<li>(55.33406050090192, 0.6108181277767878) 测试集</li>
+<li>(83.00347064630587, 0.575098424925357)  训练集</li>
+</ul>
+</li>
+<li>
+<p>增加了2次项特征后模型结果（最好）</p>
+<ul>
+<li>模型在测试集的表现结果: 30.830177954866645 0.7831616500066133</li>
+<li>模型在训练集的表现结果: 60.80409444996298 0.6887388527057157</li>
+</ul>
+</li>
+<li>
+<p>增加了3次项特征后模型结果</p>
+<ul>
+<li>模型在测试集的表现结果: 33.96117658337967 0.7611403506994145</li>
+<li>模型在训练集的表现结果: 49.49512455918217 0.7466303972598027</li>
+</ul>
+</li>
+<li>
+<p>增加了4次项特征后模型结果</p>
+<ul>
+<li>模型在测试集的表现结果: 135.47253896643744 0.04717897308601049</li>
+<li>模型在训练集的表现结果: 80.61314731189564 0.5873346861541975</li>
+</ul>
+</li>
+</ul>
+<h2 id="过拟合处理正则化"><a class="markdownIt-Anchor" href="#过拟合处理正则化"></a> 过拟合处理:正则化</h2>
+<p>什么是正则化？<br />
+对损失函数加入一个惩罚项，使得模型由多解变为更倾向其中一个解(更加精准的预测)。</p>
+<ul>
+<li>正则化项
+<ul>
+<li>前面使用多项式回归，如果多项式最高次项比较大，模型就容易出现过拟合。正则化是一种常见的防止过拟合的方法，一般原理是在损失函数后面加上一个对参数(w)的约束项，这个约束项被叫做正则化项（regularizer）。在线性回归模型中，通常有两种不同的正则化项：
+<ul>
+<li>加上所有参数的绝对值之和，即L1范数，此时叫做Lasso回归</li>
+<li>加上所有参数即L2范数(所有参数的平方和)，此时叫做岭回归</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>注意：
+<ul>
+<li>LinnerRegression是没有办法进行正则化的，所以该算法模型容易出现过拟合，并且无法解决。</li>
+</ul>
+</li>
+</ul>
+<h3 id="ridge岭回归具备l2正则化的线性回归模型"><a class="markdownIt-Anchor" href="#ridge岭回归具备l2正则化的线性回归模型"></a> Ridge岭回归:具备L2正则化的线性回归模型</h3>
+<ul>
+<li>岭回归也是一种用于回归的&quot;线性模型&quot;(因此它求解系数w也是使用最小二乘法实现的)但在岭回归中，对系数（w）的选择不仅要使得模型在训练数据上得到好的预测结果，而且还要给模型添加拟合的附加“约束”，就是希望系数w尽量小。</li>
+<li>换句话说，就是所有w都应接近于0。直观上来看，这意味着每个特征对输出的影响应尽可能小（即斜率很小），同时模型仍可以给出很好的预测结果。</li>
+<li>这种“约束”就是是所谓正则化（regularization）。正则化是指对模型做显式约束，以避免过拟合。</li>
+<li>岭回归用到的这种被称为 L2 正则化。</li>
+</ul>
+<h3 id="示例-2"><a class="markdownIt-Anchor" href="#示例-2"></a> 示例</h3>
+<p>岭回归在波士顿房价上的预测效果（如果要用该数据集，请先导入mglearn库）</p>
+<p>pip install mglearn</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> mglearn</span><br><span class="line"><span class="comment">#提取样本数据</span></span><br><span class="line">feature,target = mglearn.datasets.load_extended_boston()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#切分数据集</span></span><br><span class="line">x_train,x_test,y_train,y_test = train_test_split(feature,target,test_size=<span class="number">0.2</span>,random_state=<span class="number">2020</span>)</span><br><span class="line"><span class="comment">#建模</span></span><br><span class="line">linner = LinearRegression()</span><br><span class="line">linner.fit(x_train,y_train)</span><br><span class="line"><span class="comment">#模型评估</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;测试集的表现:&#x27;</span>,r2_score(y_test,linner.predict(x_test)))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;训练集的表现:&#x27;</span>,r2_score(y_train,linner.predict(x_train)))</span><br><span class="line"></span><br><span class="line"><span class="comment">#测试集的表现: 0.6686661366503848</span></span><br><span class="line"><span class="comment">#训练集的表现: 0.9390074922223917</span></span><br><span class="line"><span class="comment">#发现模型在训练集表现的好，测试集表现的不好，说明模型出现了过拟合！！！</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>上述实验观测到的结果：
+<ul>
+<li>岭回归在训练集上的分数要低于线性回归，但在测试集上的分数更高。</li>
+<li>由于岭回归的约束性更强，因此不容易出现过拟合；复杂度更小(系数w更小,更接近于0)的模型意味着在训练集上的性能更差，但泛化性（在更多未知数据集上的表现）能更好。由于我们只对泛化性能感兴趣，所以应该选择岭回归模型而不是线性回归模型。</li>
+</ul>
+</li>
+<li>岭回归的超参数：alpha
+<ul>
+<li>增大 alpha 会使得系数更加趋向于 0，从而降低训练集性能，但可能会提高泛化性能；</li>
+<li>减小 alpha 可以让系数受到的限制更小。</li>
+<li>如何选择alpha的值：
+<ul>
+<li>选择正确alpha的值有助于模型学习正确的特征并有更好的泛化能力，因此交叉验证/学习曲线是帮助选择正确值的一种方法。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> Ridge <span class="comment">#岭回归模型</span></span><br><span class="line"><span class="keyword">import</span> mglearn</span><br><span class="line"></span><br><span class="line"><span class="comment">#提取样本数据</span></span><br><span class="line">feature,target = mglearn.datasets.load_extended_boston()</span><br><span class="line"><span class="comment">#数据集切分</span></span><br><span class="line">x_train,x_test,y_train,y_test = train_test_split(feature,target,test_size=<span class="number">0.2</span>,random_state=<span class="number">2020</span>)</span><br><span class="line"><span class="comment">#建模</span></span><br><span class="line">ridge = Ridge(alpha=<span class="number">0.01</span>) <span class="comment">#alpha的值也大则表示L2正则化处理过拟合的力度越大</span></span><br><span class="line"><span class="comment">#max_iter:模型最大的迭代次数（尽量稍微大点）</span></span><br><span class="line"></span><br><span class="line">ridge.fit(x_train,y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment">#模型的评估</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;测试集的表现:&#x27;</span>,r2_score(y_test,ridge.predict(x_test)))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;训练集的表现:&#x27;</span>,r2_score(y_train,ridge.predict(x_train)))</span><br><span class="line"><span class="comment">#测试集的表现: 0.871776615421402</span></span><br><span class="line"><span class="comment">#训练集的表现: 0.9278219811981989</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="岭回归的应用场景"><a class="markdownIt-Anchor" href="#岭回归的应用场景"></a> 岭回归的应用场景</h3>
+<ul>
+<li>接下来我们来通过固定 alpha 值，但改变训练数据量来理解岭回归的正则化：
+<ul>
+<li>针对波士顿房价数据集，在不断增加训练样本的情况下分别对 LinearRegression 和 Ridge(alpha=1) 两个模型进行评估：<br />
+<img src="/images/%E8%BF%87%E6%8B%9F%E5%90%88%E6%AC%A0%E6%8B%9F%E5%90%8811.png" alt="img" /></li>
+<li>由于岭回归是正则化的，因此它的训练集分数要整体低于线性回归的训练集分数。但岭回归的测试分数要更高，特别是对较小的子数据集。如果少于 400 个数据点，线性回归学不到任何内容。随着模型可用的数据越来越多，两个模型的性能都在提升，最终线性回归的性能追上了岭回归。</li>
+<li>这里要记住的是，如果有足够多的训练数据，正则化变得不那么重要，并且岭回归和线性回归将具有相同的性能。</li>
+</ul>
+</li>
+</ul>
+<h3 id="lasso回归"><a class="markdownIt-Anchor" href="#lasso回归"></a> lasso回归</h3>
+<ul>
+<li>与岭回归相同，lasso回归也是约束系数w使其接近于 0,但用到的方法不同， lasso回归的约束使用的是L1正则化。</li>
+<li>L1正则化的结果是，某些参数w会被缩减压缩到0。这说明某些特征被模型完全忽略。这可以看作是一种自动化的特征选择。</li>
+<li>某些系数刚好为 0，这样的模型更容易解释，也可以呈现模型最重要的特征。<br />
+我们继续将lasso回归呈现于波士顿房价的数据集上</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> Lasso</span><br><span class="line"><span class="keyword">import</span> mglearn</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> Ridge</span><br><span class="line">feature,target = mglearn.datasets.load_extended_boston()</span><br><span class="line"></span><br><span class="line">x_train,x_test,y_train,y_test = train_test_split(feature,target,test_size=<span class="number">0.2</span>,random_state=<span class="number">2020</span>)</span><br><span class="line"></span><br><span class="line">model = Lasso(alpha=<span class="number">1</span>)</span><br><span class="line">model.fit(x_train,y_train)</span><br><span class="line"><span class="comment">#模型评估</span></span><br><span class="line"><span class="comment">#测试集的表现: 0.22140772570108613</span></span><br><span class="line"><span class="comment">#训练集的表现: 0.23183091909679476</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">(model.coef_ != <span class="number">0</span>).<span class="built_in">sum</span>()</span><br><span class="line"><span class="comment">#4</span></span><br></pre></td></tr></table></figure>
+<p>可以发现，lasso回归的分数无论是在测试集还是训练集上都非常的差；这说明存在欠拟合，通过最后一行代码我们可以知道模型只用到了104个特征中的 4 个。<br />
+模型超参数：</p>
+<ul>
+<li>alpha：与 岭回归类似，Lasso 也有一个正则化参数 alpha，可以控 制系数趋向于 0 的强度。在上一个例子中，我们用的是默认值 alpha=1.0。为了降低欠拟合，我们尝试减小 alpha。</li>
+<li>这么做的同时，我们还需要增加 max_iter 的值（运行迭代的最大次数）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">feature,target = mglearn.datasets.load_extended_boston()</span><br><span class="line">x_train,x_test,y_train,y_test = train_test_split(feature,target,test_size=<span class="number">0.2</span>,random_state=<span class="number">2020</span>)</span><br><span class="line"></span><br><span class="line">model = Lasso(alpha=<span class="number">0.1</span>,max_iter=<span class="number">1000</span>)</span><br><span class="line">model.fit(x_train,y_train)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;测试集的表现:&#x27;</span>,r2_score(y_test,model.predict(x_test)))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;训练集的表现:&#x27;</span>,r2_score(y_train,model.predict(x_train)))</span><br><span class="line">feature,target = mglearn.datasets.load_extended_boston()</span><br><span class="line"></span><br><span class="line">x_train,x_test,y_train,y_test = train_test_split(feature,target,test_size=<span class="number">0.2</span>,random_state=<span class="number">2020</span>)</span><br><span class="line"></span><br><span class="line">​</span><br><span class="line"></span><br><span class="line">model = Lasso(alpha=<span class="number">0.1</span>,max_iter=<span class="number">1000</span>)</span><br><span class="line"></span><br><span class="line">model.fit(x_train,y_train)</span><br><span class="line"></span><br><span class="line">​</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;测试集的表现:&#x27;</span>,r2_score(y_test,model.predict(x_test)))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;训练集的表现:&#x27;</span>,r2_score(y_train,model.predict(x_train)))</span><br><span class="line"></span><br><span class="line"><span class="comment">#测试集的表现: 0.7246460263073</span></span><br><span class="line"><span class="comment">#训练集的表现: 0.7338444027523867</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p>在实践中，在两个模型中一般首选岭回归。但如果特征很多，你认为只有其中几个是重要 的，那么选择 Lasso 可能更好。同样，如果你想要一个容易解释的模型，Lasso 可以给出 更容易理解的模型，因为它只选择了一部分输入特征。</p>
+<h1 id="模型的保存和加载"><a class="markdownIt-Anchor" href="#模型的保存和加载"></a> 模型的保存和加载</h1>
+<ul>
+<li>from sklearn.externals import joblib
+<ul>
+<li>joblib.dump(model,‘xxx.m’):保存</li>
+<li>joblib.load(‘xxx.m’):加载</li>
+</ul>
+</li>
+<li>import pickle
+<ul>
+<li>with open(’./123.pkl’,‘wb’) as fp:
+<ul>
+<li>pickle.dump(linner,fp)</li>
+</ul>
+</li>
+<li>with open(’./123.pkl’,‘rb’) as fp:
+<ul>
+<li>linner = pickle.load(fp)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"><span class="comment">#保存模型</span></span><br><span class="line">model = Lasso(alpha=<span class="number">0.001</span>)</span><br><span class="line">model.fit(x_train,y_train) <span class="comment">#训练好的模型</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;./house_pirce.pkl&#x27;</span>,<span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    pickle.dump(model,fp) <span class="comment">#将训练好的模型model保存到fp表示的文件中</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#加载模型</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;./house_pirce.pkl&#x27;</span>,<span class="string">&#x27;rb&#x27;</span>) <span class="keyword">as</span> fp:</span><br><span class="line">    model = pickle.load(fp)</span><br><span class="line">    model <span class="comment">#输出</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>数据挖掘</category>
+        <category>机器学习</category>
+        <category>拟合</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>数据挖掘</tag>
+        <tag>机器学习</tag>
+        <tag>拟合</tag>
       </tags>
   </entry>
 </search>
